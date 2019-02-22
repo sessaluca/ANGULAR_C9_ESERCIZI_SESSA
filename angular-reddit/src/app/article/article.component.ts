@@ -16,13 +16,14 @@ export class ArticleComponent implements OnInit {
   }
 
   voteUp(): Boolean {
-    this.article.votes += 1; //accediamo alla proprietà votes di article
+    this.article.voteUp(); //Modificato qui 
     return false;
   }
 
   voteDown():Boolean {
-    this.article.votes -= 1;
+    this.article.voteDown(); //Modificato qui
     return false;
   }
-    ngOnInit() {}
+
+  ngOnInit() {}
 }
